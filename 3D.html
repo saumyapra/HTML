@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1">
+        <title>
+            3D Animation
+        </title>
+        <style>
+            body{
+                background: blue;
+            }
+            .sq{
+                background: transparent;
+                width: 30vh;
+                height: 30vh;
+                transform: rotate(45deg);
+                position: fixed;
+                animation-name: rot;
+                animation-iteration-count: infinite;
+                animation-duration: 5s;
+                position: absolute;
+                left: 40%;
+                top: 20vh;                
+            }
+            @keyframes rot{
+                0%{
+                    background-color: rgb(24, 236, 24);
+                    transform: rotate(90deg) scale(1.5);
+                    border: 20px solid black;
+                }
+                50%{
+                    border-radius: 25%; 
+                    background-color: brown;
+                    transform: rotate(180deg) scale(2);                
+                    border: 20px dotted black;   
+                }
+                100%{
+                    border-radius: 50%; 
+                    background-color: rgb(248, 234, 107);
+                    transform: rotate(360deg) scale(1.5);
+                    border: 20px double black; 
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <div class="sq"></div>
+        </main>
+    </body>
+</html>

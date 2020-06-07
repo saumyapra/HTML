@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>BLOG</title>
+    <style>
+        .col1{
+            background-color: rgb(206, 253, 248);
+        }
+        .side{
+            background-color:#113032;
+            overflow: hidden;
+            position: absolute;
+            top:63px;
+            right: 80%;
+            left: 0%;
+            bottom:0%;
+            width: 20%;            
+        }
+        .top{
+            background-color: #113032; 
+            overflow: hidden;       
+            position: absolute;
+            top: 0px;
+            left: 0%;
+            right: 0px;    
+        }
+        .top a{
+            float: left;
+            color:cornsilk;
+            text-align: center;
+            padding: 20px 20px;
+            text-decoration: aqua;
+            font-size: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: bold;
+        }
+        .top a:hover{
+            background-color: blanchedalmond;
+            color: black;
+            transform: scale(1.2);
+        }
+        .top a.active{
+            background-color: blanchedalmond;
+            color:black;
+        }
+        .material-icons{
+            font-size: 40px;            
+            color: rgb(102, 3, 3);
+        }
+        .text{
+            font-family:cursive, Arial, Helvetica, sans-serif;            
+            font-style: bold;
+            font-size: 40px;
+            position: absolute;
+            color: green;
+            right: 1%;
+            top: 20%;
+        }
+    </style>
+</head>
+<body class="col1">
+    <div class="side"></div>
+    <header >
+    <div class="top" style="display: flex; flex-direction: row;">
+        <div class="text">blog</div>
+        <a class="active" href="#home" target="_blank" style="padding: 10px 5px;" !important> 
+           <i class="material-icons">home</i>
+        </a>
+        <a href="#far" target="_blank">posts</a>
+        <a href="#notification" target="_blank">favourites</a>
+        <a href="#bell" target="_blank">notification</a>
+        <a href="#horse" target="_blank">about</a>
+        <a href="#fire" target="_blank">others</a>
+    </div>
+    </header>
+    
+    <p style="position: absolute; left:50%;">
+        <footer>
+            blah
+        <i class="material-icons">home</i>
+        </footer>
+    </p>
+    
+</body>
+</html>

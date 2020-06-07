@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> animations</title>
+        <style>
+            .micky{
+                width: 100px;
+                height: 100px;
+                position: absolute;
+                top: 20%;
+                left: 40%;
+                background-color: red;
+                transform: rotate(60deg);
+                animation-name: try;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+            }
+            
+            @keyframes try{
+                0%{
+                    background-color:green;
+                    transform: rotate(30deg); 
+                    left:30%;
+                    top:40%;
+                }
+                10%{
+                    background-color:yellow;
+                    transform: rotate(50deg); 
+                    left:40%;
+                    top:50%;
+                }
+                20%{
+                    background-color:orange;
+                    transform: rotate(70deg); 
+                    left:45%;
+                    top:60%;
+                }
+                30%{
+                    background-color:cyan;
+                    transform: rotate(135deg); 
+                    left:80%;
+                    top:45%;
+                }
+                40%{
+                    background-color:rgb(153, 4, 153);
+                    transform: rotate(150deg); 
+                    left:30%;
+                    top:70%;
+                }
+                50%{
+                    background-color: brown;
+                    transform: rotate(170deg); 
+                    left:89%;
+                    top:10%;
+                }
+                60%{
+                    background-color:paleturquoise;
+                    transform: rotate(200deg); 
+                    left:76%;
+                    top:56%;
+                }
+                70%{
+                    background-color:red;
+                    transform: rotate(230deg); 
+                    left:56%;
+                    top:90%;
+                }
+                80%{
+                    background-color:lightcoral;
+                    transform: rotate(250deg); 
+                    left:49%;
+                    top:23%;
+                }
+                90%{
+                    background-color:azure;
+                    transform: rotate(280deg); 
+                    left:66%;
+                    top:89%;
+                }
+                100%{
+                    background-color:palevioletred;
+                    transform: rotate(340deg); 
+                    left:33%;
+                    top:89%;
+                }
+            }
+           
+        </style>
+        </head>
+        <body>
+            <div class="micky"></div>
+        </body>
+        </html>
