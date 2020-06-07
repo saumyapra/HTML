@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">  
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" >            
+    <title> 
+        TRIAL
+    </title>  
+           
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            body{
+                margin: 0%;
+                box-sizing: border-box;            
+            }
+        .bgc{
+            background: linear-gradient(45deg, rgb(48, 153, 135), rgb(5, 146, 151));
+        }
+        .tc{
+            display: block;
+            box-sizing: border-box;
+            height: auto;
+            align-self: stretch;
+            margin: 0px;
+            padding: 5px;
+            font-size: 6vw;            
+            min-width: 100%;
+            text-align: center;
+            overflow: hidden;
+            font-style: italic;
+            position: absolute;
+            right: 0vw;
+            left: 0vw;
+            top: 0%;
+            background: radial-gradient(rgb(11, 220, 228), rgb(29, 122, 175), rgb(0, 63, 0)) ;
+            color: rgb(13, 27, 14);
+            border-style: ridge;
+            border-width: 20px;
+            border-color: rgb(219, 133, 4);
+            text-shadow: 0px 10px 10px rgba(2, 5, 184, 0.5);
+        }
+        .ani{
+            animation-name: rainbow;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes rainbow{
+            0%{
+                background-color: yellow;
+            }
+            50%{
+                background-color: red;
+            }
+            100%{
+                background-color: black;
+            }
+        }
+        .col{
+            font-size: 4em;
+            font-family: 'Times New Roman', Times, serif;
+            text-align:center;
+            box-sizing: border-box;
+            border-radius: 30% 0% 30% 0%;
+            width: fit-content;
+            border-style: inset;    
+            border-width: 10px;
+            border-color: rgba(145, 35, 21, 0.822);        
+            background-color: rgb(8, 112, 39);
+            margin-left: 5%;
+            margin-right: 5%;
+            position: absolute;
+            top: 12vh;
+            right: 30%;
+            left: 30%;
+            z-index: 2;
+            margin-top: 5%; 
+            color: rgb(49, 49, 231);
+            box-shadow: -10px 10px 10px rgb(241, 238, 19,0.5);
+            display: block;
+            box-sizing: border-box;
+            padding: 0.1em;
+        }
+        @media only screen and (max-width: 500px){
+            col{
+                font-size: 0.1em;
+                width: fit-content;
+            }
+        }
+        .fs{
+            font-size: 30px;
+            color: burlywood;
+            font-style: italic;
+            position: relative;
+            top: 60%;
+            box-sizing: border-box;
+            float: center;
+        }
+        .c{
+            color: blanchedalmond;
+            text-align: center;
+        }
+        .pg{
+            border-left-style: double;
+            border-right-style: double;
+            border-top-style: groove;
+            border-bottom-style: groove;
+            border-color: burlywood;
+            border-width: 10px;
+            margin-left: 10vw;
+            margin-right: 10vw;
+            margin-top: 20vh;
+            margin-bottom: 30vh;
+            background-color: brown;
+            animation-name: fade;
+            animation-duration: 5s;
+            padding: fit-content;
+        }
+        .body{
+            background: yellow;
+            font-family: serif;
+        }
+        .search{
+            box-sizing: border-box;
+            border-style: solid; 
+            border-width: 5px;
+            border-color: green;
+            border-radius: 20px 0px 0px 20px;
+            margin-left: 10%;
+            display: flex;
+            flex-direction: row-reverse;
+            margin: 0%;
+            color: crimson;  
+            align-self: stretch;
+            box-sizing: border-box; 
+            z-index: 6;
+        }
+        .sbt{  
+            box-sizing: border-box;          
+            border-style: solid;                       
+            border-color: brown;  
+            border-width: 5px;          
+            background-color: rgb(38, 240, 196);
+            display: flex;
+            flex-direction: row-reverse;
+            width: fit-content;
+            z-index: 7;
+        }
+        .section{
+            position: relative;
+        }
+        .flt{
+            overflow-x: hidden;
+            float: right;
+            width: 5%;
+            border-style: solid;
+            border-width: 4px;
+            border-color: aqua;
+            background-color: brown;
+            padding-left: 3em;
+            padding-right: 5em;
+            font-size: 1em;
+            position: relative;
+            top: 40vh;
+        }
+        .flt2{
+            float: left;
+            width: 7%;
+            border-style: solid;
+            border-width: 4px;
+            border-color: aqua;
+            background-color: brown;
+            padding: 20px;
+            position: relative;
+            top: 40vh;
+        }
+        @media only screen and (max-width: 400px){
+            flt{
+                float: right;
+            }
+            flt2{
+                float: right;
+            }
+        }
+        .blk{
+            width: 40px;
+            background-color: red;
+            height: 40px;
+            position: relative;
+            border-radius: 50%;
+        }
+        #blk{
+            animation-name: rainbow;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes rainbow{
+            0%{
+                background-color: teal;  
+                left: 0%;
+            }
+            25%{
+                background-color:yellow;
+                left: 25%;
+            }
+            50%{
+                background-color:orange;
+                left: 60%;
+            }
+            75%{
+                background-color:brown;
+                left:95%;
+            }
+            100%{
+                background-color:black;
+                left: 0%;
+            }
+        }
+        .blend{
+            box-sizing: border-box;
+            position: static;
+            margin-left: 1vw;
+            margin-right: 1vw;
+            margin-bottom: 5vh;
+            width: 96vw;
+            height: 5vh;           
+            border-radius: 30%;
+            box-shadow: 0px 25px 10px 0px black;
+            background-color: transparent;
+        }
+        .flot{
+            position: fixed;
+            top: 0px;
+            left: 45%;
+            border: 5px;
+            border-style: solid;
+            border-color: black;
+            background-color: black;
+            color: aquamarine;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        .heart {
+            position: absolute;
+            margin: auto;
+            top: 540px;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: pink;
+            height: 50px;
+            width: 50px;
+            transform: rotate(-45deg);
+            animation-name: blink;
+            animation-duration: 900ms;
+            animation-iteration-count: infinite;
+            z-index: 100;
+        }
+        .heart::after {
+            background-color: pink;
+            content: "";
+            border-radius: 50%;
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            top: 0px;
+            left: 25px;
+            animation-name: blink;
+            animation-duration: 900ms;
+            animation-iteration-count: infinite;
+        }
+        .heart::before {
+            content: "";
+            background-color: pink;
+            border-radius: 50%;
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            top: -25px;
+            left: 0px;
+            animation-name: blink;
+            animation-duration: 900ms;
+            animation-iteration-count: infinite;
+        }
+        @keyframes blink{
+            0%{
+                background-color: rgb(226, 43, 150);
+                opacity: 1;
+            }
+            25%{
+                opacity: 1;
+            }
+            50%{
+                background-color:red;
+                opacity: 0.25;
+            }
+            75%{
+                opacity: 0.5;
+            }   
+            100%{
+                background-color: rgb(226, 43, 150);
+                opacity: 0.25;
+            }
+        }
+        @keyframes fade{
+            0%{
+                opacity: 0;
+                
+            }
+            25%{
+                opacity: 0.25;
+                
+            }
+            50%{
+                opacity: 0.5;
+                
+            }
+            75%{
+                opacity: 0.75;
+            }
+            100%{
+                
+                opacity: 1;
+            }
+        }
+        .jump{
+            box-sizing: border-box;
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            border-radius: 50%;
+            border-width: 10px;
+            border-color: brown;
+            border-style: solid;
+            background-color: rgb(14, 187, 14);
+            animation-name: jmp;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;           
+        }
+        @keyframes jmp{
+            0%{
+                left: 0%;
+                bottom: 30%;
+            }
+            25%{
+                left: 25%;
+                bottom: 10%;
+                opacity: 1;
+            }
+            30%{
+                opacity: 0;
+            }
+            50%{
+                left: 50%;
+                bottom: 30%;
+                opacity: 0;
+            }
+            65%{
+                opacity: 0;
+            }
+            75%{
+                left: 75%;
+                bottom: 10%;
+                opacity: 1;
+            }
+            100%{
+                left: 95%;
+                bottom: 30%;
+            }
+        }
+        </style>
+        </head>
+        <body class="bgc c">
+      <main>
+        
+        <div class="tc" id="contains">Lets Try Something More Organised</div>
+    <p>
+        <label for="search">Search</label>
+            <input type="search" class="search">
+            <input type="submit" id= "search" name="search" class="sbt">
+    </p>
+        <h2 class="col">
+            Test text for boxing
+        </h2>
+        <div class="flot">
+            MAI SATH SATH CHALEGA
+        </div>
+        <p class="flt">
+            lets see what happens
+        </p>
+        <p class="flt2">
+            and here<br>we go
+        </p>
+        <div class="heart"></div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p></p>
+        <p></p>
+        <p class="fs pg">            
+            <strong>  
+            <br>A shine of divine truth,
+            <br>A shadow of a dark secret,
+            <br>When both met, a hell was formed,
+            <br>And the name was you.
+            <br>
+            <br>I saw that thing closely,
+            <br>And I wondered,
+            <br>How is it possible?
+            <br>That something could be so similar to you.
+            <br>
+            <br>No, no, dear,
+            <br>Am not lying,
+            <br>You wanna see it by yourself?
+            <br>Then go and look into the mirror by your side.
+            <br>
+            <br>A shine of divine truth,
+            <br>That’s what I was looking for,
+            <br>But you showed up so anonymously,
+            <br>I lost my hope and eternity.
+            <br>
+            <br>    
+            </strong>
+        </p>
+        <form>
+            <fieldset style="border-color: yellow; border-style: outset; border-width: 1em; background-color: rgb(163, 99, 15); width:fit-content; position: relative; left: 40%; right: 40%;">
+                <legend tabindex="1">-:Table of choices:-</legend> <!--tabindex order begins with 1-->
+                <table>
+                    <tr>
+                        <td>
+                            <ul>     
+                                <li>                                
+                                    <input type="radio" name="radio1-radio2">
+                                    radio1                              
+                                </li>           
+                                <li>                       
+                                    <input type="radio" name="radio1-radio2">
+                                    radio2                
+                                </li>            
+                                <li>                
+                                    <input type="radio">
+                                    radio3               
+                                </li>            
+                                <li>                
+                                    <input type="radio">
+                                    radio4                
+                                </li>          
+                            </ul>
+                        </td>
+                        <td>
+                            <ol>      
+                                <li>                
+                                    <input type="checkbox" name="cb1-cb2">
+                                    cb1                
+                                </li>
+                                <li>                
+                                    <input type="checkbox" name="cb1-cb2">
+                                    cb2               
+                                </li>
+                                <li>
+                                    <input type="checkbox">
+                                    checkbox 3                
+                                </li>
+                                <li>                
+                                    <input type="checkbox" checked>
+                                    checkbox 4                
+                                </li>       
+                            </ol>
+                        </td> 
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+        <p style="text-align: right;">
+            <a href="https://www.google.co.in/" target="_blank" accesskey="h"><strong>THE OTHER SITE</strong></a>
+            <a href="#contains" class="scrl">TOP</a>
+        </p> 
+        <!--An <iframe> is used to display a web page within a web page.-->
+            <div class="blk" id="blk"></div>
+            <div class="blend ani"></div>
+            <div class="jump"></div>
+            <label for="date">choose date</label>
+            <input type="date" id="date" name="DATE">
+            <input type="submit" id="date" name="submit">
+            <!--https://www.youtube.com/watch?v=fA1NW-T1QXc-->
+      </main>
+    </body>
+</html>
