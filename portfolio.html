@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <title>
+            Portfolio
+        </title>
+        <style>
+            html{
+                scroll-behavior: smooth;
+            }
+            body{
+                margin: 0px;
+                box-sizing: border-box;
+            }
+            #welcome-section{
+                box-sizing: border-box;
+                height: 100vh;
+                width: 100%;
+                background-color: rgba(122, 11, 11, 0.808);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            h1{
+                font-size: 50px;
+                font-family: 'Arial Narrow Bold', sans-serif;
+                text-align: center;
+                color: linear-gradient(45deg, red, green, blue);
+            }
+            #navbar{
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: row;
+                position: fixed;
+                top: 0px;
+                height: 10vh;
+                width: 100%;
+                background-color: rgba(19, 18, 18, 0.918);                
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 30px;
+                font-weight: bold;
+            }
+            .link{
+                text-decoration: none;
+                padding: 1.4rem;
+                color: blanchedalmond;
+            }
+            .link:hover{
+                transform: scale(1.2);
+            }
+            #projects{
+                box-sizing: border-box;
+                background-color: #130E2A;
+                display: grid;
+                grid-template-columns: 40% 20% 40%;
+                grid-template-rows: 50% 50%;
+                height: 120vh;                
+            }
+            .project-tile{ 
+                box-sizing: border-box;                
+                width: 80%;
+                height: 80%;
+                margin: 10%;
+                background: orange;
+            }
+            img{
+                width: 50%;
+                height: 100%;
+                
+            }
+            footer{
+                width: 100%;
+                height: 10vh;
+                background-color: orangered;
+                text-align: center;
+                position: relative;
+                bottom: 0px;
+            }
+            #profile-link{
+                color: rgb(219, 192, 155);
+                text-decoration: none;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: 30px;
+            }
+            .material-icons{
+                text-align: center;
+                color: rgb(171, 209, 65);
+                font-size: 36px;
+                
+            }
+            @media (max-width: 400px){
+                icons{
+                    font-size: 20px;
+                }
+            }
+            #welcome-section p{
+                color: rgb(204, 187, 243);
+                font-size: 40px;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-weight: 100;
+            }
+            .icons{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                color: aquamarine;
+                font-size: 30px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+
+        </style>
+    </head>
+    <body> 
+        <nav id="navbar">
+            <a href="#welcome-section" class="link">About</a></div>
+            <a href="#projects" class="link">Work</a></div>
+            <a href="#profile-link" class="link">Contact</a></div>
+        </nav>
+        <section id="welcome-section">
+            <h1>Welcome to my portfolio page<p>Saumya Pratap Singh</p></h1>
+        </section>
+        <section id="projects">
+                
+                <div>
+                    <a href="https://codepen.io/freeCodeCamp/pen/MJjpwO"><div class="project-tile"></div></a>
+                </div>
+                <div class="icons">
+                    <p>Tribute Page<br><i class="material-icons">subdirectory_arrow_left</i></p>
+                    <p>Survey Form<br><i class="material-icons">subdirectory_arrow_right</i></p>
+                </div>
+                <div>
+                    <a href="https://codepen.io/freeCodeCamp/pen/MJjpwO"><div class="project-tile"></div></a>
+                </div>
+                <div>
+                    <a href="https://codepen.io/freeCodeCamp/pen/MJjpwO"><div class="project-tile"></div></a>
+                </div>
+                <div class="icons">
+                    <br>
+                    <p>Product Landing Page<br><i class="material-icons">subdirectory_arrow_left</i></p>
+                    <p>Technical Documentation Page<br><i class="material-icons">subdirectory_arrow_right</i></p>
+                </div>
+                <div>
+                    <a href="https://codepen.io/freeCodeCamp/pen/MJjpwO"><div class="project-tile"></div></a>
+                </div>
+           
+        </section>
+        <footer>
+            <i class="material-icons">accessibility</i>
+            <a href="https://www.freecodecamp.org/saumya-pratap" id="profile-link" target="_blank">Contact Me</a>
+        </footer>
+    </body>
+</html>
